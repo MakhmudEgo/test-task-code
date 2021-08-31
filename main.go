@@ -12,7 +12,7 @@ import (
 type Note struct {
 	Time     time.Time
 	Text     string
-	Lifetime time.Time
+	Lifetime time.Time `json:"-"`
 }
 
 func main() {
